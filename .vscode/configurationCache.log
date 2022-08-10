@@ -1,0 +1,1 @@
+{"buildTargets":["PHONY","all","cargo-bloat","clean-all","depends","dev","devtools","run","update"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

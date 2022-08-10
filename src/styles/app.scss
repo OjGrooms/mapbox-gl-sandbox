@@ -1,0 +1,468 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+// Fonts
+$family-sans-serif: "Niramit", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-monospace: monospace !default;
+$render-mode: optimizeLegibility !default;
+
+$size-1: 2rem !default;
+$size-2: 1.5rem !default;
+$size-3: 1rem !default;
+$size-4: 1.25rem !default;
+$size-5: 1rem !default;
+$size-6: 0.75rem !default;
+$size-7: 0.5rem !default;
+
+$weight-light: 300 !default;
+$weight-normal: 400 !default;
+$weight-regular: 400 !default;
+$weight-medium: 500 !default;
+$weight-semibold: 600 !default;
+$weight-bold: 700 !default;
+$weight-black: 900 !default;
+
+//  Colors
+$green: #6ba43a;
+$light-green: #c2df94;
+$red: #c14729;
+$light-red: #f5a292;
+$yellow: #efbb1f;
+$light-yellow: #f9e19c;
+$blue: #3c79eb;
+$light-blue: #abc4f3;
+$info-blue: #209cee;
+$light-info-blue: #8ec6eb;
+$black: #000000;
+// Warm Grays
+$dark-gray: #4a4a4a;
+$medium-gray: #888888;
+$light-gray: #cccccc;
+$very-light-gray: #eeeeee;
+// Cool Grays
+$dark-blue-gray: #30404d;
+$medium-blue-gray: #808c96;
+$light-blue-gray: #b1bfca;
+$very-light-blue-gray: #edf3f9;
+
+// // Bulma Colors
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lightest: hsl(0, 0%, 93%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(48, 100%, 67%) !default;
+$green: hsl(141, 53%, 53%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(204, 71%, 53%) !default;
+$blue: hsl(217, 71%, 53%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 86%, 61%) !default;
+
+// // Bulma Misc.
+// $easing: ease-out !default;
+$radius-small: 2px !default;
+$radius: 4px !default;
+$radius-large: 6px !default;
+// $radius-rounded: 290486px !default;
+// $speed: 86ms !default;
+
+// // Bulma Derived variables
+// $primary: $turquoise !default;
+
+$info: $blue !default;
+$success: $green !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+// $light: $white-ter !default;
+// $dark: $grey-darker !default;
+
+// // Invert colors
+// $orange-invert: findColorInvert($orange) !default;
+// $yellow-invert: findColorInvert($yellow) !default;
+// $green-invert: findColorInvert($green) !default;
+// $turquoise-invert: findColorInvert($turquoise) !default;
+// $cyan-invert: findColorInvert($cyan) !default;
+// $blue-invert: findColorInvert($blue) !default;
+// $purple-invert: findColorInvert($purple) !default;
+// $red-invert: findColorInvert($red) !default;
+
+// $primary-invert: findColorInvert($primary) !default;
+// $primary-light: findLightColor($primary) !default;
+// $primary-dark: findDarkColor($primary) !default;
+// $info-invert: findColorInvert($info) !default;
+// $info-light: findLightColor($info) !default;
+// $info-dark: findDarkColor($info) !default;
+// $success-invert: findColorInvert($success) !default;
+// $success-light: findLightColor($success) !default;
+// $success-dark: findDarkColor($success) !default;
+// $warning-invert: findColorInvert($warning) !default;
+// $warning-light: findLightColor($warning) !default;
+// $warning-dark: findDarkColor($warning) !default;
+// $danger-invert: findColorInvert($danger) !default;
+// $danger-light: findLightColor($danger) !default;
+// $danger-dark: findDarkColor($danger) !default;
+// $light-invert: findColorInvert($light) !default;
+// $dark-invert: findColorInvert($dark) !default;
+
+// // General colors
+// $scheme-main: $white !default;
+// $scheme-main-bis: $white-bis !default;
+// $scheme-main-ter: $white-ter !default;
+// $scheme-invert: $black !default;
+// $scheme-invert-bis: $black-bis !default;
+// $scheme-invert-ter: $black-ter !default;
+
+// $background: $white-ter !default;
+
+// $border: $grey-lighter !default;
+// $border-hover: $grey-light !default;
+$border-light: $grey-lightest !default;
+// $border-light-hover: $grey-light !default;
+
+// // Text colors
+// $text: $grey-dark !default;
+// $text-invert: findColorInvert($text) !default;
+// $text-light: $grey !default;
+$text-strong: $grey-darker !default;
+
+// // Code colors
+// $code: $red !default;
+// $code-background: $background !default;
+
+// $pre: $text !default;
+// $pre-background: $background !default;
+
+// // Link colors
+// $link: $blue !default;
+// $link-invert: findColorInvert($link) !default;
+// $link-light: findLightColor($link) !default;
+// $link-dark: findDarkColor($link) !default;
+// $link-visited: $purple !default;
+
+// $link-hover: $grey-darker !default;
+// $link-hover-border: $grey-light !default;
+
+// $link-focus: $grey-darker !default;
+// $link-focus-border: $blue !default;
+
+// $link-active: $grey-darker !default;
+// $link-active-border: $grey-dark !default;
+
+// // Typography
+$family-primary: $family-sans-serif !default;
+$family-secondary: $family-sans-serif !default;
+// $family-code: $family-monospace !default;
+
+$size-small: $size-7 !default;
+$size-normal: $size-6 !default;
+$size-medium: $size-5 !default;
+$size-large: $size-4 !default;
+
+// // Lists and maps
+// $custom-colors: null !default;
+// $custom-shades: null !default;
+
+@import "./bulma/base/generic.scss";
+@import "./bulma/base/minireset.scss";
+@import "./bulma/components/card.scss";
+@import "./bulma/components/navbar.scss";
+@import "./bulma/components/pagination.scss";
+@import "./bulma/components/panel.scss";
+@import "./bulma/form/tools.scss";
+@import "./bulma/form/shared.scss";
+@import "./bulma/grid/columns.scss";
+@import "./bulma/elements/table.scss";
+@import "../../node_modules/bulma/bulma.sass";
+@import "./bulma/layout/footer.scss";
+@import "./bulma/layout/section.scss";
+@import "./bulma/elements/button.scss";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: $dark-gray;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+#nav {
+  padding: 30px;
+
+  & a {
+    margin-left: 1em;
+    text-decoration: none;
+  }
+
+  & a.router-link-exact-active {
+    color: #42b983;
+  }
+}
+
+.alert {
+  z-index: 100;
+}
+
+a:link {
+  color: $green;
+}
+
+a:visited {
+  color: $green;
+}
+
+a:focus {
+  color: $green;
+}
+
+a:hover {
+  color: $red;
+}
+
+td {
+  a:link {
+    color: $blue;
+  }
+
+  a:visited {
+    color: $blue;
+  }
+
+  a:focus {
+    color: $blue;
+  }
+
+  a:hover {
+    color: $red;
+  }
+}
+
+.push {
+  height: 100px;
+}
+
+.content-spacer {
+  height: 30px;
+}
+
+.container {
+  &.content {
+    margin-top: 30px;
+  }
+}
+
+.required {
+  color: red;
+}
+
+.content {
+  h3 {
+    &.subhead,
+    .subhead {
+      color: $green;
+    }
+  }
+}
+
+// Form Elements
+.label {
+  text-align: left;
+}
+
+.input {
+  line-height: 2.0em;
+  fieldset[disabled] & {
+    background-color: #f0f0f0;
+    color: #3a3a3a;
+  }
+}
+
+.field-label {
+  flex-grow: 2;
+}
+
+.panel {
+  font-size: $size-medium;
+  &.is-info {
+    .panel-heading {
+      background-color: $dark-blue-gray;
+    }
+  }
+}
+
+.panel-block {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .panel-content {
+    width: 100%;
+    .columns {
+      &.header-row {
+        background-color: $very-light-blue-gray;
+        border-bottom: 1px $light-gray solid;
+        margin-top: -6px;
+        .column {
+          padding-top: 5px;
+          padding-bottom: 2px;
+        }
+      }
+    }
+  }
+}
+
+.columns {
+  .column {
+    &.detail-header {
+      min-width: 360px;
+    }
+    &.side-nav {
+      flex-basis: 20rem;
+    }
+  }
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: $weight-semibold;
+  cursor: pointer;
+
+  &.panel-heading {
+    font-size: 24px;
+    padding: 5px 0 10px 0;
+    .icon {
+      color: white;
+    }
+  }
+}
+
+h2 {
+  &.section-subhead {
+    .icon {
+      color: $green;
+    }
+
+    .icon {
+      &.alert {
+        color: $red;
+      }
+    }
+
+    .icon {
+      &.warn {
+        color: $yellow;
+      }
+    }
+
+    .icon {
+      &.success {
+        color: $green;
+      }
+    }
+  }
+}
+
+.logo {
+  max-width: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+// Modals
+.header-card-head {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.modal-card-foot {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.is-left {
+  text-align: left;
+}
+
+.is-right {
+  text-align: right;
+}
+
+h2 {
+  &.section-subhead {
+    color: $blue;
+    font-weight: $weight-semibold;
+    margin-bottom: 5px;
+  }
+}
+
+.section {
+  padding: 5px;
+  padding-top: 0;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card-head {
+  text-align: left;
+  margin-left: 30px;
+}
+
+span {
+  &.token {
+    &.number {
+      align-items: left;
+      background-color: transparent;
+      border-radius: 0;
+      display: inline-flex;
+      font-size: 1rem;
+      height: 1rem;
+      justify-content: left;
+      margin-right: 0;
+      min-width: 1em;
+      padding: 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+    &.operator {
+      color: #9a6e3a;
+      background-color: transparent;
+    }
+  }
+}
+
+em {
+  font-style: normal;
+  font-weight: $weight-semibold;
+  color: $blue;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    &.content {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

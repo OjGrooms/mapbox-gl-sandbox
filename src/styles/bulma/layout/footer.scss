@@ -1,0 +1,14 @@
+// $footer-background-color: $scheme-main-bis !default;
+// $footer-color: false !default;
+// $footer-padding: 3rem 1.5rem 6rem !default;
+
+.footer {
+  background-color: #434343;
+  margin: 0;
+  padding: 1rem;
+  height: 50px;
+
+  .content, strong {
+    color: white;
+  }
+}

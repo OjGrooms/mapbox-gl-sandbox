@@ -1,0 +1,24 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/josephgrooms/Src/sandbox'
+yarn install
+cd dev-tools && yarn install
+************  LARGEST RUST FUNCTIONS, DEPENDENCIES, COMPILE TIMES ************
+cd ./src-tauri && cargo bloat --release -n 10
+cd ./src-tauri && cargo bloat --release --crates -n 10
+ 
+# cd ./src-tauri && # cargo bloat --release --time -n 10
+yarn install vue-cli-plugin-tauri@latest
+yarn install -s @tauri-apps/api@latest
+yarn install @tauri-apps/cli@latest
+cd dev-tools && yarn run dev
+yarn tauri dev
+rm -rf node_modules
+rm -rf dist/**.*
+rm -rf src-tauri/target
+rm -rf dev-tools/node_modules
+rm -rf cypress/videos
+rm -rf cypress/screenshots
+make: Leaving directory `/Users/josephgrooms/Src/sandbox'
+ 
+make: *** No rule to make target `dev-sandbox', needed by `PHONY'.
+

@@ -1,0 +1,351 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Wed Aug 10 12:51:31 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 5)
+define cargo_bloat
+	$(info ************  LARGEST RUST FUNCTIONS, DEPENDENCIES, COMPILE TIMES ************)
+	cd ./src-tauri && $(CARGO) bloat --release -n 10
+	cd ./src-tauri && $(CARGO) bloat --release --crates -n 10
+	# cd ./src-tauri && # $(CARGO) bloat --release --time -n 10
+endef
+# environment
+NVM_INC = /Users/josephgrooms/.nvm/versions/node/v16.14.2/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 24)
+vue_devtools = 	cd dev-tools && $(YARN) run dev
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/josephgrooms/Src/sandbox
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 15)
+define yarn_install
+	$(YARN) install
+	cd dev-tools && $(YARN) install
+endef
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Users/josephgrooms/.nvm/versions/node/v16.14.2/bin:/Users/josephgrooms/.pyenv/shims:/Users/josephgrooms/.yarn/bin:/Users/josephgrooms/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/josephgrooms/.cargo/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+ 
+# environment
+NVM_BIN = /Users/josephgrooms/.nvm/versions/node/v16.14.2/bin
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /Users/josephgrooms/.pyenv
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.z0NXlu71q4/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/josephgrooms/Src/sandbox
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /Users/josephgrooms/.nvm/versions/node/v16.14.2/share/man:/opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PYENV_SHELL = zsh
+# environment
+HOME = /Users/josephgrooms
+# makefile (from `Makefile', line 20)
+dev_start =   $(YARN) tauri dev
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/josephgrooms/Library/Application Support/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+LOGNAME = josephgrooms
+# makefile (from `Makefile', line 28)
+define update_tauri
+  $(YARN) install vue-cli-plugin-tauri@latest
+	$(YARN) install -s @tauri-apps/api@latest
+	$(YARN) install @tauri-apps/cli@latest
+endef
+# makefile (from `Makefile', line 2)
+YARN := yarn
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+NVM_CD_FLAGS = -q
+# environment
+ZSH = /Users/josephgrooms/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = josephgrooms
+# makefile
+.DEFAULT_GOAL := PHONY
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 34)
+define clean
+	rm -rf node_modules
+	rm -rf dist/**.*
+	rm -rf src-tauri/target
+	rm -rf dev-tools/node_modules
+	rm -rf cypress/videos
+	rm -rf cypress/screenshots
+endef
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/wv/m8plhbln2550st3nd4vt8xn40000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/josephgrooms/Library/Application Support/Code/1.70.0-main.sock
+# environment
+MallocNanoZone = 0
+# makefile (from `Makefile', line 3)
+CARGO := cargo
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /Users/josephgrooms/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.19723528.19723534
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 1)
+PROJECTNAME = sandbox
+# environment
+EDITOR = micro
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 43603
+# variable set hash-table stats:
+# Load=82/1024=8%, Rehash=0, Collisions=2/111=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777233, inode 15385605): 19 files, no impossibilities.
+
+# 19 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+PHONY: all cargo-bloat update depends devtools dev-sandbox run clean-all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: depends
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+devtools:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 62):
+	$(call vue_devtools)
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-13 10:57:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+update:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 54):
+	$(call update_tauri)
+	
+
+depends:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := depends
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+ 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/14=21%
+#  commands to execute (from `Makefile', line 58):
+	$(call yarn_install)
+	
+
+dev:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 66):
+	make -j 2 devtools run
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 70):
+	$(call dev_start)
+	
+
+clean-all:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	$(call clean)
+	
+
+cargo-bloat: depends
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 49):
+	$(call cargo_bloat)
+	
+
+# Not a target:
+dev-sandbox:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=13/1024=1%, Rehash=0, Collisions=1/44=2%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Wed Aug 10 12:51:31 2022
+
+ 

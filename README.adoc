@@ -1,0 +1,45 @@
+= Vue 3 + TypeScript + Vite Wrapped in Tauri
+
+== Purpose:
+----
+To demonstrate an issue seen in using auto resize for the map.
+----
+
+=====
+You must provide a token, a field is availible in the map header. You can track it through the emit: header -> map view -> mainStore.mapToken -> mapModal -> Mapbox
+
+To test: Submit token and select a location from the dropdown. 
+
+To disable 'auto resizing', comment out lines `83` and `110` in `Mapbox.vue`. Open the map after refreshing and submitting a token, drag a corner of the window to trigger resize.
+If the window is resized while the `flyTo` animation is still active, the center of the animation will still be centered in the old map dimensions
+
+=====
+== Project setup
+
+----
+make depends
+----
+
+=== Compiles and hot-reloads for development
+
+----
+make run
+----
+
+=== Clean Project
+
+----
+make clean-all
+----
+
+=== Vue Devtools
+
+----
+make devtools
+----
+
+OR run both devtools and development server:
+
+----
+make dev
+----
